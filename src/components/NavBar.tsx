@@ -1,26 +1,38 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
+import { Breadcrumb, BreadcrumbItem, Box } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 
 export const NavBar = () => {
+  const router = useRouter();
   return (
     <Breadcrumb>
       <BreadcrumbItem>
-        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+        <Box cursor="pointer" onClick={() => router.push('/')}>
+          Home
+        </Box>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="/autobatch">Auto-batch</BreadcrumbLink>
+        <Box cursor="pointer" onClick={() => router.push('/autobatch')}>
+          Auto-batch
+        </Box>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="/suspense">Suspense</BreadcrumbLink>
+        <Box cursor="pointer" onClick={() => router.push('/suspense')}>
+          Suspense
+        </Box>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="/nested_suspense">Nested-Suspense</BreadcrumbLink>
+        <Box cursor="pointer" onClick={() => router.push('//nested_suspense')}>
+          Nested-Suspense
+        </Box>
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href="/concurrent">startTransition</BreadcrumbLink>
+        <Box cursor="pointer" onClick={() => router.push('/concurrent')}>
+          startTransition
+        </Box>
       </BreadcrumbItem>
     </Breadcrumb>
   );
