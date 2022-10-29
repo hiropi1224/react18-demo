@@ -58,7 +58,11 @@ export const AutoBatch = () => {
           </React.Fragment>
         ))}
       </OrderedList>
+      <Text>
+        AutoBatchでは複数の状態更新を1つの再レンダリングにグループ化して、パフォーマンスを向上させる
+      </Text>
       <Button onClick={clickHandler}>Auto Batch click</Button>
+      <Text>FlushSyncを使うことでReactv17までと同様の挙動となる</Text>
       <Button onClick={clickHandlerFlushSync}>FlushSync click</Button>
     </Stack>
   );
