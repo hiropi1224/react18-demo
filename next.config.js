@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  experimental: {
+    concurrentFeatures: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
