@@ -30,7 +30,7 @@ export const NavBar = () => {
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <Box cursor="pointer" onClick={() => router.push('/concurrent')}>
+        <Box cursor="pointer" onClick={() => router.push('/startTransition')}>
           startTransition
         </Box>
       </BreadcrumbItem>
