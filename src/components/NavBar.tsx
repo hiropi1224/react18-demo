@@ -24,7 +24,7 @@ export const NavBar = () => {
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <Box cursor="pointer" onClick={() => router.push('//nested_suspense')}>
+        <Box cursor="pointer" onClick={() => router.push('/nested_suspense')}>
           Nested-Suspense
         </Box>
       </BreadcrumbItem>
